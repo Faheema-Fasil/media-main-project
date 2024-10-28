@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+
 
 
 
@@ -20,7 +23,7 @@ function Add() {
     </div>
 
 
-
+{/* Add modal */}
             <Modal
               show={show}
               onHide={handleClose}
@@ -31,14 +34,44 @@ function Add() {
                 <Modal.Title>Video title</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                I will not close if you click outside me. Do not even try to press
-                escape key.
+                {/* floating form */}
+               <FloatingLabel
+                          controlId="floatingInput1"
+                          label="Video Id"
+                          className="mb-3"
+                        >
+                          <Form.Control type="text" placeholder="Video Id" />
+                        </FloatingLabel>
+               <FloatingLabel
+                          controlId="floatingInput2"
+                          label="Video Title"
+                          className="mb-3"
+                        >
+                          <Form.Control type="text" placeholder="Video Title" />
+                        </FloatingLabel>
+
+                        <FloatingLabel
+                          controlId="floatingInput3"
+                          label="Image URL"
+                          className="mb-3"
+                        >
+                          <Form.Control type="text" placeholder="Image URL" />
+                        </FloatingLabel>
+
+                        <FloatingLabel
+                          controlId="floatingInput4"
+                          label="Video URL"
+                          className="mb-3"
+                        >
+                          <Form.Control type="text" placeholder="Video URL" />
+                        </FloatingLabel>
               </Modal.Body>
+
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
                   Close
                 </Button>
-                <Button variant="primary">Understood</Button>
+                <Button variant="primary">Cancel</Button>
               </Modal.Footer>
             </Modal>
 
