@@ -7,13 +7,13 @@ import View from '../Components/View'
 function Home() {
   return (
     <>
-    <div className="container mt-5 d-flex justif-content-between mb-3">
+    <div style={{display:'flex',justifyContent:'space-between'}} className="container mt-5 mb-3">
 
       <div className="add-videos">
         <Add/>
       </div>
        <Link to={"/watch-history"} style={{textDecoration:"none"}} className='fw-bolder fs-2 text-primary' >
-       Watch-History 
+       Watch-History  <i class="fa-solid fa-clock-rotate-left fa-xl"></i>
        </Link>
       
     </div>  
