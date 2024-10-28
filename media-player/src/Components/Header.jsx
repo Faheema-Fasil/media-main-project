@@ -1,10 +1,13 @@
 import React from 'react'
 import {Container,Navbar} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+
 
 function Header() {
   return (
     <>
-      <Navbar style={{backgroundColor:'grey'}} >
+       <Link to="/" style={{textDecoration:'none'}}>
+       <Navbar className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -20,6 +23,8 @@ function Header() {
           </Navbar.Brand>
         </Container>
       </Navbar>
+       
+       </Link>
     </>
   )
 }
