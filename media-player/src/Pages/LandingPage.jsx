@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Card, Col, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 
 
@@ -12,7 +13,7 @@ function LandingPage() {
         <Col lg={5}>
         <h1 style={{color:"grey", fontSize:"40px"}}>WELCOME TO <span className='text-dark'>MEDIA-PLAYER</span></h1>
         <p>Welcome to Media-Player! Dive into an immersive experience where your favorite music, videos, and podcasts come together in one place. Whether you're here to unwind with soothing tunes, catch up on the latest hits, or watch captivating videos, Media-Player offers seamless playback and quality sound. Discover, create, and enjoy playlists tailored just for you. Let's make every moment a little more musical!</p>
-        <Button className='btn btn-dark'>Get Started</Button>
+        <Link to={'./home'} className='btn btn-dark'>Get Started</Link>
         </Col>
         <Col lg={5}>
         <img width={'100%'} src="https://media.tenor.com/r5HknDlfbK8AAAAM/record.gif" alt="" />

@@ -9,7 +9,7 @@ function Footer() {
   return (
     <>
     <footer>
-    <MDBFooter bgColor='light' style={{position:'',bottom:'0' }} className='text-center mt-5 text-lg-left'>
+    <MDBFooter bgColor='light' style={{position:'',bottom:'0', width:'100%' }} className='text-center mt-5 text-lg-left'>
       <MDBContainer className='p-4'>
         <MDBRow>
           <MDBCol lg='6' md='12' className='mb-4 mb-md-0'>
