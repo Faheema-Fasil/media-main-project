@@ -1,5 +1,13 @@
 AXIOS
 it is a promise based HTTP client for the browserr and node.js
+-make XMLHttpRequests from brrowser
+-make http requst from  node
+-supports the rpomise api
 
+Automatic request body serialization to:
+-JSON(application/json)
+-Multipart/FormData(multipart/formdata)
+-URL encoded from (application/x-www-form-urlencoded)
 commd:
-npm i axios
+install
+@ npm install axios
